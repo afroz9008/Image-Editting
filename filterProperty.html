@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter Property</title>
+    <link href="filterPropertyCss.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div class="container" id="container">
+            <img src="img.jpg" id="img">
+            <label>Upload Image : <input type="file" id="upload" name="file" accept="Image/*"></label>
+        </div>
+        <div class="controls">
+            <details>
+                <summary>Contrast</summary>
+                Contrast : <input type="range" value="100" max=200 id="contrast"><span id="contrast_value">100 </span>
+            </details>
+            <details>
+                <summary>Blur</summary>
+                Blur : <input type="range" value="0" max=10 id="blur"><span id="blur_value">0 </span>
+            </details>
+            <details>
+                <summary>Brightness</summary>
+                Brightness : <input type="range" value="100" max=200 id="brightness"><span id="brightness_value">100
+                </span>
+            </details>
+            <details>
+                <summary>Grayscale</summary>
+                Grayscale : <input type="range" value="0" max=100 id="grayscale"><span id="grayscale_value">0 </span>
+            </details>
+            <details>
+                <summary>Hue Color</summary>
+                Hue Color : <input type="range" value="0" max=360 id="hue-rotate"><span id="hue-rotate_value">0 </span>
+            </details>
+            <details>
+                <summary>Inert</summary>
+                Inert : <input type="range" value="0" max=100 id="invert"><span id="invert_value">0 </span>
+            </details>
+            <details>
+                <summary>Opacity</summary>
+                Opacity : <input type="range" value="100" max=100 id="opacity"><span id="opacity_value">100 </span>
+            </details>
+            <details>
+                <summary>Saturate</summary>
+                Saturate : <input type="range" value="100" max=300 id="saturate"><span id="saturate_value">100 </span>
+            </details>
+            <details>
+                <summary>Sepia</summary>
+                Sepia : <input type="range" value="0" max=100 id="sepia"><span id="sepia_value">0 </span>
+            </details>
+        </div>
+    </div>
+</body>
+<script src="filterPropertyScript.js"></script>
+
+</html>
